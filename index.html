@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Just Do It</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/nike-removebg-preview.png"></a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Just Do It.</h1>
+            <p>Discover the latest collection of Nike shoes designed for performance and style. Whether you're running, training, or just walking around, we've got the perfect pair for you.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" onclick="openModal('Nike Air Max 270', 150, 'https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike Air Max 270 delivers the brand\'s largest Air unit yet for a sensation unlike anything you\'ve felt before. It offers premium comfort and style for all-day wear.')">
+                <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike Air Max" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Air Max 270</h3>
+                    <p class="product-price">$150</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card" onclick="openModal('Nike Air Force 1', 110, 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike Air Force 1 is a classic basketball shoe that has stood the test of time. With its durable leather upper and iconic Air cushioning, it provides comfort and style for everyday wear.')">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike Air Force" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Air Force 1</h3>
+                    <p class="product-price">$110</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card" onclick="openModal('Air Jordan 1 Retro', 170, 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=1025&q=80', 'The Air Jordan 1 Retro High OG is a modern take on the classic AJ1 silhouette. Featuring premium leather, original color blocking, and Nike Air cushioning, it delivers timeless style and comfort.')">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=1025&q=80" alt="Nike Jordan" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Air Jordan 1 Retro</h3>
+                    <p class="product-price">$170</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card" onclick="openModal('Nike React Infinity Run', 160, 'https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike React Infinity Run is designed to help reduce injury and keep you running. More foam means improved cushioning for a smooth ride that\'s stable and lightweight.')">
+                <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike React Infinity Run" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike React Infinity Run</h3>
+                    <p class="product-price">$160</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card" onclick="openModal('Nike Metcon 6', 130, 'https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike Metcon 6 is the ultimate training shoe for serious athletes. With a stable, wide heel and sticky rubber outsole, it provides the support and traction you need for heavy lifts and tough workouts.')">
+                <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike Metcon 6" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Metcon 6</h3>
+                    <p class="product-price">$130</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card" onclick="openModal('Nike Zoom Pegasus 38', 120, 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike Zoom Pegasus 38 offers a smooth, responsive ride for everyday training. With Zoom Air cushioning and a breathable mesh upper, it provides comfort and performance mile after mile.')">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike Zoom Pegasus 38" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Zoom Pegasus 38</h3>
+                    <p class="product-price">$120</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product-card" onclick="openModal('Nike Dunk Low Retro', 100, 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1025&q=80', 'The Nike Dunk Low Retro returns with classic colors and throwback hoops flair. Its padded collar and original details offer heritage style, comfort and durability.')">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1025&q=80" alt="Nike Dunk Low Retro" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Dunk Low Retro</h3>
+                    <p class="product-price">$100</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 8 -->
+            <div class="product-card" onclick="openModal('Nike Air VaporMax 2023', 210, 'https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike Air VaporMax 2023 combines the revolutionary VaporMax Air technology with a sleek, modern design. The result is incredible comfort and responsiveness with every step.')">
+                <img src="https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike Air VaporMax 2023" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Air VaporMax 2023</h3>
+                    <p class="product-price">$210</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 9 -->
+            <div class="product-card" onclick="openModal('Nike Blazer Mid \'77', 95, '/blazer.jpg', 'The Nike Blazer Mid \'77 Vintage delivers a timeless design that\'s easy to wear. Its padded collar and classic details offer heritage style, comfort and durability.')">
+                <img src="/blazer.jpg" alt="Nike Blazer Mid '77" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Blazer Mid '77</h3>
+                    <p class="product-price">$95</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 10 -->
+            <div class="product-card" onclick="openModal('Nike Free RN 5.0', 110, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'The Nike Free RN 5.0 is designed for natural movement, with a flexible sole that expands and contracts with your foot. The lightweight upper provides breathability and comfort.')">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nike Free RN 5.0" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Free RN 5.0</h3>
+                    <p class="product-price">$110</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 11 -->
+            <div class="product-card" onclick="openModal('Nike Air Zoom Alphafly NEXT%', 275, 'data:image/jpeg;base64,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', 'The Nike Air Zoom Alphafly NEXT% is built for record-breaking speed. With a lightweight, breathable upper and responsive cushioning, it helps you maintain speed over distance.')">
+                <img src="data:image/jpeg;base64,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">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Air Zoom Alphafly NEXT%</h3>
+                    <p class="product-price">$275</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 12 -->
+            <div class="product-card" onclick="openModal('Nike Air Max 97', 175, '/air.jpg', 'The Nike Air Max 97 keeps the sneaker classic going strong with the same design details that made it famous: water-ripple lines, reflective piping and full-length Max Air cushioning.')">
+                <img src="data:image/jpeg;base64,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">
+                <div class="product-info">
+                    <h3 class="product-title">Nike Air Max 97</h3>
+                    <p class="product-price">$175</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Neumorphism -->
+    <section class="products">
+        <div class="neumorphic">
+            <h2 class="section-title">About Nike</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; line-height: 1.6;">
+                Our mission is what drives us to do everything possible to expand human potential. We do that by creating groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse global team and by making a positive impact in communities where we live and work.
+            </p>
+            <div style="text-align: center;">
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalProductTitle">Product Name</h2>
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalProductImage" src="" alt="Product Image" class="modal-img">
+                <div class="modal-info">
+                    <p id="modalProductPrice" class="modal-price">$0</p>
+                    <p id="modalProductDescription" class="modal-description">Product description goes here.</p>
+                    
+                    <div class="size-selector">
+                        <h3>Select Size</h3>
+                        <div class="size-options">
+                            <div class="size-option">US 7</div>
+                            <div class="size-option">US 8</div>
+                            <div class="size-option">US 9</div>
+                            <div class="size-option">US 10</div>
+                            <div class="size-option">US 11</div>
+                            <div class="size-option">US 12</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn" style="width: 100%; margin-top: 20px;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Customize</a></li>
+                    <li><a href="#">New Releases</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

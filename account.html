@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Nike Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="/nike-removebg-preview.png" alt="Nike Logo"></a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="account-section">
+        <div class="account-container">
+            <div class="account-sidebar">
+                <div class="account-profile">
+                    <div class="profile-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Welcome, User</h3>
+                </div>
+                <div class="account-menu">
+                    <ul>
+                        <li><a href="#" class="active"><i class="fas fa-user"></i> Profile</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i> Orders</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="account-content">
+                <h1>My Profile</h1>
+                
+                <div class="account-details">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" value="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" value="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="john.doe@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" value="(123) 456-7890">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthday">Date of Birth</label>
+                            <input type="date" id="birthday" value="1990-01-01">
+                        </div>
+                        
+                        <h2>Change Password</h2>
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" id="currentPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" id="newPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <input type="password" id="confirmPassword">
+                        </div>
+                        
+                        <button type="submit" class="btn">Save Changes</button>
+                    </form>
+                </div>
+                
+                <div class="account-orders">
+                    <h2>Recent Orders</h2>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span class="order-number">Order #123456</span>
+                                <span class="order-date">June 15, 2025</span>
+                                <span class="order-status">Delivered</span>
+                            </div>
+                            <div class="order-products">
+                                <img src="data:image/jpeg;base64,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" alt="Product">
+                                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Product">
+                                <span class="more-items">+2 more</span>
+                            </div>
+                            <div class="order-footer">
+                                <span class="order-total">$245.00</span>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span class="order-number">Order #123457</span>
+                                <span class="order-date">May 28, 2025</span>
+                                <span class="order-status">Delivered</span>
+                            </div>
+                            <div class="order-products">
+                                <img src="https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Product">
+                            </div>
+                            <div class="order-footer">
+                                <span class="order-total">$120.00</span>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Customize</a></li>
+                    <li><a href="#">New Releases</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
